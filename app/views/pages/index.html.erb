@@ -4,5 +4,7 @@
 </p>
 <% @pages.each do |page| %>
   <h2><%= page.title %></h2>
-  <%= link_to 'Click me!', page_path(page) %>
+  <%= link_to 'show!', page_path(page) %>
+  <%= link_to 'edit!', edit_page_path(page) %>
+
 <% end %>
